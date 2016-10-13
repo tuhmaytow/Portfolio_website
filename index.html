@@ -3,52 +3,176 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Portfolio</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
 	<script type="text/javascript" src="app.js"></script>
 	<link rel="stylesheet" type="text/css" href="index.css" >
 </head>
 <body>
-	<div id="parallax1" class="parallax1">
-		<img src="logos.png" style="width:280px; height:310px" class="logo">
-			<h1>Eunica Lazatin</h1>
-			<h1>Full Stack Web Developer</h1>
+	<div class="parallax1">
+		<img src="./images/logos.png" style="width:280px; height:310px" class="logo">
+			<h1 class="name">Eunica Lazatin</h1>
+			<h1 class="name">Full Stack Web Developer</h1>
 			<hr id="colored"></hr>
 			<h2>Digital Portfolio</h2>
 			<div class="mid-nav">
-			 <span class="button"><a href="">Projects</a></span>
-			 <span class="button"><a href="">About Me</a></span>
-			 <span class="button"><a href="">Contact</a></span>
+			 <span class="button"><a href="#portfolio">PORTFOLIO</a></span>
+			 <span class="button"><a href="#bio">BIO</a></span>
+			 <span class="button"><a href="#contact">CONTACT</a></span>
 		</div>
 	</div>
-	<!---PROJECTS--->
-		<div class="container-fluid">
-			<h1 class="section-title">Projects</h1>
-			<hr id	="colored"></hr>
-						  <!---FIRST--->
-							<div class="project-section">
-							<div class="project">
-								<div class="projectImage"><img src="q1proj.png" target="_blank" style="height:400px;width:500px;"></div>
-								  <div class="project-title">
-											<h3>COLOR-BLOCKS</h3>
-											<hr id="underbar"></hr>
-									</div>
-									<div class="project-details">
-												<p>This project focuses on the implementation of the fundamentals of JavaScript. After learning the basic fundamentals of JavaScript(OOP), I wanted to build something fun and something that reminded me of childhood, and what other application would you build other than a game! I was inspired by the classic game Dr. Mario; Color-Blocks is a game that lets the player match the falling colored blocks to the appropriate matching color of blocks.</p>
-									</div>
-								</div>
-								</div>
-							</div>
+	<!---PORTFOLIO--->
+	<a name="portfolio"></a>
+	<div class="container-fluid">
+		<h1 class="section-title1">PORTFOLIO</h1>
+		<hr id="colored"></hr>
+		<div class="flex-container">
+			<!---FIRST--->
+			<div class="col-1-3">
+				<div class="project-section">
+					<div class="project">
+						<div class="projectImage">
+							<img src="./images/q1proj.png" style="width:100%;">
+						</div>
+						<div class="project-title">
+							<a href="https://colorblocks.herokuapp.com" class="titles">COLOR-BLOCKS</a>
+							<hr id="underbar"></hr>
+						</div>
+						<div class="project-details">
+							<p>Color-Blocks is an in-browser game that implements HTML Canvas to add various features. Inspired by the game Dr. Mario, the player can manipulate the falling block to the appropriate/matching colored blocks on the canvas to score.</p>
+						</div>
+						<div class="github-link">
+							  <a href="https://github.com/tuhmaytow/Color-Blocks">View code on Github</a>
+						</div>
+					</div>
+				</div>
 			</div>
+			<!---SECOND--->
+			<div>
+				<div class="col-2-3">
+					<div class="project-section">
+						<div class="project">
+							<div class="projectImage">
+								<img src="./images/q2proj.png" style="width:100%;">
+							</div>
+							<div class="project-title">
+								<a href="https://event-listener.herokuapp.com/" class="titles">EVENT-LISTENER</a>
+								<hr id="underbar"></hr>
+							</div>
+							<div class="project-details">
+								<p>Event-Listener is a web app that enables users to search for various events in and around their area. It lets users to save events, send events to other users, and receive email notifications for saved events happening in the next 24 hours. Technologies implemented include JavaScript, PostgreSQL and MongoDB to store users, SendGrid for notification, Node.js and Express for back-end, and GoogleOAuth for authenticating.</p>
+							</div>
+							<div class="github-link">
+								  <a href="hhttps://github.com/heladolk/event-listener">View code on Github</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!---THIRD--->
+			<div>
+				<div class="col-3-3">
+					<div class="project-section">
+						<div class="project">
+							<div class="projectImage">
+								<img src="./images/q3proj.png" style="width:100%;">
+							</div>
+							<div class="project-title">
+								<a href="http://crossword-generator.xyz/" class="titles">CROSSWORD GENERATOR</a>
+								<hr id="underbar"></hr>
+							</div>
+							<div class="project-details">
+								<p>This project focuses on the implementation of computer science concepts and algorithms. With the utilization of the AC-3 algorithm(Arc Consistency),it allows to determine whether the grid is consistent or there are word patterns which cannot be instantiated with words. It prevents having to search the entire grid for a word pattern to backtrack to when some word pattern cannot be instantiated. It searches each word from our built-in dictionary for words that can fit to the “across” and “down” word patterns and for intersecting word patterns.</p>
+							</div>
+							<div class="github-link">
+								  <a href="https://github.com/tuhmaytow/Crossword-Puzzle-Generator">View code on Github</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- -CAPSTONE--->
+			<!-- <div>
+				<div class="project-section">
+					<div class="project">
+						<div class="projectImage">
+							<img src="" target="_blank" style="height:100%;width:100%;">
+						</div>
+						<div class="project-title">
+							<a href="" class="titles">CAPSTONE</a>
+							<hr id="underbar"></hr>
+						</div>
+						<div class="project-details">
+							<p>A web app that enables users to find events, save them, send invitation to other users and get reminders. It integrates meetup.com API and eventbrite API to get events info.</p>
+						</div>
+					</div>
+				</div>
+			</div> -->
+		</div>
+	</div>
+	<!---ABOUT ME--->
+	<div class="bio-me">
+		<a name="bio"></a>
+		<h1 class="section-title2">BIO</h1>
+		<hr id="colored"></hr>
+		<div class="flex-container">
+			<div class="profileimg"></div>
+			<div class="bio-details">
+				<p class="block-text">I'm a Full Stack Web Developer based in the SF Bay area. As a Full Stack Developer, my area of proficiency includes HTML Canvas and CSS for the front-end, and on the back-end; Node.js and Express framework for creating and managing web API routes. Other than building interactive web apps, I also love a challenge here and there whether it may be coding or other things that enables me to push and enhance my web developing skills. My mission is to strive for progress and quality and not perfection.</p>
+			</div>
+		</div>
+	</div>
+	<!---CONTACT--->
+	<div class="contact-me">
+		<a name="contact"></a>
+		<h1 class="section-title3">CONTACT</h1>
+		<hr id="colored"></hr>
+		<div class="flex-container">
+			<div class="contact-details">
+				<div class="email">
+					<div class="contact-icon">
+						<i class="fa fa-envelope-o fa-1x" aria-hidden="true"></i>
+					</div>
+					<p>lazatin.nica@gmail.com</p>
+				</div>
+				<div class="phone">
+					<div class="contact-icon">
+						<i class="fa fa-phone-square fa-1x" aria-hidden="true"></i>
+					</div>
+					<p>925-348-0347</p>
+				</div>
+				<div class="link-container">
+					<div class="links">
+						<div class="github"></div>
+						<a target="_blank" href="https://github.com/tuhmaytow">
+							<i class="fa fa-github-square fa-3x" style="color:white;" aria-hidden="true"></i>
+						</a>
+						<div class="linkedin"></div>
+						<a target="_blank" href="https://www.linkedin.com/in/eunicalazatin">
+							<i class="fa fa-linkedin-square fa-3x" style="color:white;" aria-hidden="true"></i>
+						</a>
+						<!-- <div class="instagram"></div>
+						<a target="_blank" href="https://www.instagram.com/tuhmaytow">
+							<i class="fa fa-instagram fa-3x" style="color:white;" aria-hidden="true"></i>
+						</a> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
-
-<!-- <div class="col-md-6">
-		<img src="profilepic.jpg" class="image" alt>
-</div> -->
-<!-- style="height:500px;background-color:#2c2d3e;" -->

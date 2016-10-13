@@ -1,7 +1,7 @@
 .parallax1 {
     height: 100vh;
     width: 100%;
-    background-image: url('lines.png');
+    background-image: url('./images/lines.png');
     background-attachment: fixed; /*fixed: image scrolls; scroll: image stays*/
     background-position: center;
     background-repeat: no-repeat;
@@ -14,7 +14,7 @@
   display: block;
 }
 
-h1 {
+.name {
   font-family: 'Raleway', 'sans-serif';
   font-size: 30px;
   color: #312F2F;
@@ -70,53 +70,69 @@ a {
 }
 
 .button a:hover {
-    border-color: #2cfdc9;
-    color: #2cfdc9;
+  border-color: #2cfdc9;
+  color: #2cfdc9;
 }
 
 .container-fluid {
-  background-color: #2c2d3e;
+  height: auto;
+  min-height: 100vh;
+  background-color: #2F323B;
 }
 
-.section-title {
+.flex-container {
+  display: flex;
+  flex-flow:row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-title1 {
   font-family: 'Raleway', 'sans-serif';
   font-size: 40px;
   color: #CEE7E6;
-  letter-spacing: 2px;
-  text-decoration: none;
-  margin-top: 50px;
-}
-
-.project {
-  max-width: 400px;
-  min-width: 300px;
-  margin: 1em;
-  height: auto;
-  display: flex;
-  flex-flow: row wrap;
-  -webkit-box-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-align: center;
 }
 
 .project-section {
-    width: 100%;
-    height: auto;
-    padding: 1rem;
-    box-sizing: border-box;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    -webkit-box-align: start;
-    align-items: flex-start;
+  width: 400px;
 }
 
-.project-title h3 {
+[class*='col-'] {
+  float: left;
+}
+
+.col-1-3 {
+  margin-right: 2vw;
+  /*margin-left: auto;*/
+  margin-bottom: 57px;
+}
+
+.col-2-3 {
+  margin-right: 2vw;
+  /*margin-left: auto;*/
+}
+
+.col-3-3 {
+  margin-top: 38px;
+  /*margin-right: 2vw;*/
+  margin-left: auto;
+}
+
+.titles {
   font-family: 'PT Sans Narrow', 'sans-serif';
   font-size: 35px;
   color: #CEE7E6;
-  text-align: left;
+}
+
+.project-title {
+  text-align:center;
+}
+
+.project-title a:hover {
+  color: #9BA7C0;
 }
 
 #underbar {
@@ -137,18 +153,117 @@ a {
   padding: 0 0.5em;
   display: flex;
   align-items: center;
-  text-align: center;
+  justify-content: center;
   color: #CEE7E6;
   font-family: 'Raleway', 'sans-serif';
 }
 
 .projectImage {
-
+  width:100%;
+	height:auto;
 }
 
+a {
+  color: #FFFC99;
+}
 
-/*.image {
-  display: block;
-  max-width: 100%;
+a:hover {
+  color: #B1F8F2;
+}
+
+.bio-me {
+  background-color: #E3E3E3;
+}
+
+.bio-details {
+  width: 100%;
   height: auto;
-}*/
+  margin: auto;
+  padding: 0 0.5em;
+  display: flex;
+  justify-content: center;
+  color: #312F2F;
+  font-family: 'Raleway', 'sans-serif';
+}
+
+.block-text {
+  margin: auto;
+  width: 50em;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+.profileimg {
+  background-image: url(./images/profilepic.jpg);
+  background-position: center 8%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  height: 150px;
+  width: 150px;
+  border-style: none;
+  border-radius: 100px;
+  border-color: transparent;
+  margin: auto;
+}
+
+.contact-me {
+  background-color: #2F323B;
+}
+
+.section-title2 {
+  font-family: 'Raleway', 'sans-serif';
+  font-size: 40px;
+  color: #312F2F;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-align: center;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.email {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  padding: 0 0.5em;
+  display: flex;
+  justify-content: center;
+  color: #E3E3E3;
+  font-family: 'Raleway', 'sans-serif';
+}
+
+.phone {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  padding: 0 0.5em;
+  display: flex;
+  justify-content: center;
+  color: #E3E3E3;
+  font-family: 'Raleway', 'sans-serif';
+}
+
+.contact-icon {
+  margin-right: 10px;
+}
+
+.links {
+  display: flex;
+  flex-flow:row wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  padding-bottom: 20px;
+}
+
+.section-title3 {
+  font-family: 'Raleway', 'sans-serif';
+  font-size: 40px;
+  color: #CEE7E6;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-align: center;
+  margin-top:auto;
+  padding-top: 20px;
+}
