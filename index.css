@@ -83,7 +83,7 @@ a {
 .flex-container {
   display: flex;
   flex-flow:row wrap;
-  /*align-items: center;*/
+  align-items: center;
   justify-content: center;
 }
 
@@ -120,6 +120,7 @@ a {
   /*margin-right: 2vw;*/
   margin-left: auto;
 }
+
 
 .titles {
   font-family: 'PT Sans Narrow', 'sans-serif';
