@@ -83,7 +83,7 @@ a {
 .flex-container {
   display: flex;
   flex-flow:row wrap;
-  align-items: center;
+  /*align-items: center;*/
   justify-content: center;
 }
 
