@@ -176,6 +176,10 @@ a:hover {
   color: #B1F8F2;
 }
 
+.github-link-snippet {
+  margin-left: 140px;
+}
+
 .section-title2 {
   font-family: 'Bungee Hairline', cursive;
   font-size: 80px;
